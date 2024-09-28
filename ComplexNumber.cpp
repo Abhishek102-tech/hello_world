@@ -7,15 +7,18 @@ using namespace std;
 class Sum
 {
 public:
+
     int SumRealComplex(Complex ,Complex);
     int SumImaginaryComplex(Complex ,Complex);
 };
 class Complex
 {
     int a, b;
-    friend int Sum ::SumRealComplex(Complex o1, Complex o2);
-    friend int Sum ::SumImaginaryComplex(Complex o1, Complex o2);
-
+    //#Individually declaring fuctions as friends
+    /*friend int Sum::SumImaginaryComplex(Complex ,Complex);
+    friend int Sum::SumRealComplex(Complex ,Complex);*/
+    //#Declaring the entire class as friend
+    friend class Sum;
 
 public:
     void setNumber(int n1, int n2)
