@@ -10,7 +10,7 @@ class Complex{
         a=i;
         b=j;
     }
-    //We can have more than one constructor ina class
+    //We can have more than one constructor in a class
     Complex(int i){
         a=i;
         b=0;
